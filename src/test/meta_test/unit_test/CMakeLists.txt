@@ -31,7 +31,7 @@ set(MY_PROJ_LIBS dsn.dist.service.meta_server_lib
                  dsn.dist.service.zookeeper_provider
                  dsn.dist.service.common
                  dsn.dist.service.fd
-                 zookeeper_mt
+                 zookeeper
                  gtest)
 
 set(MY_PROJ_LIB_PATH "")
@@ -40,4 +40,4 @@ set(MY_PROJ_LIB_PATH "")
 set(MY_BINPLACES test.sh config-test.ini)
 
 dsn_add_executable()
-add_dependencies(${MY_PROJ_NAME} googletest)
+#add_dependencies(${MY_PROJ_NAME} googletest)
