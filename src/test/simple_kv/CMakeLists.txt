@@ -33,14 +33,11 @@ set(MY_PROJ_LIBS gtest
                  dsn.dist.service.fd.multimaster
                  dsn.dist.service.fd
                  dsn.dist.service.zookeeper_provider
-                 zookeeper_mt
+                 zookeeper
                  dsn.dev.utility
 )
 
-set(MY_PROJ_LIB_PATH 
-        ${GTEST_LIB_DIR}
-        ${ZOOKEEPER_LIB_DIR}
-        )
+set(MY_PROJ_LIB_PATH gtest)
 
 # Extra files that will be installed
 FILE(GLOB CASE_FILES "case-*")
@@ -55,4 +52,4 @@ if(WIN32)
 endif()
 
 dsn_add_executable()
-add_dependencies(${MY_PROJ_NAME} googletest)
+#add_dependencies(${MY_PROJ_NAME} googletest)

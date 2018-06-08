@@ -22,7 +22,7 @@ set(MY_SRC_SEARCH_MODE "GLOB")
 
 set(MY_PROJ_INC_PATH 
     ../../../meta_server/meta_server_lib 
-    ../../../meta_server/zookeeper 
+    #../../../meta_server/zookeeper 
     ../../../common 
     ${GTEST_INCLUDE_DIR}
     )

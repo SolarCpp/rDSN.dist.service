@@ -32,4 +32,4 @@ set(MY_PROJ_LIB_PATH "")
 set(MY_BINPLACES "")
 
 dsn_add_executable()
-add_dependencies(${MY_PROJ_NAME} googletest)
+#add_dependencies(${MY_PROJ_NAME} googletest)

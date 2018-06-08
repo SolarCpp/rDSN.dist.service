@@ -30,7 +30,7 @@ set(MY_PROJ_LIBS
     dsn.dist.service.fd
     dsn.dist.service.fd.multimaster
     dsn.dist.service.zookeeper_provider
-    zookeeper_mt
+    zookeeper
     gtest
     )
 
