@@ -52,7 +52,7 @@ dsn::error_code meta_service_test_app::start(int argc, char **argv)
     return dsn::ERR_OK;
 }
 
-GTEST_API_ int main(int, char **)
+ int main(int, char **)
 {
     dsn::register_app<meta_service_test_app>("meta");
     dsn_run_config("config-test.ini", true);

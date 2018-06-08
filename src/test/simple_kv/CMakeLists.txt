@@ -26,7 +26,7 @@ set(MY_PROJ_INC_PATH ../../common)
 
 set(MY_BOOST_PACKAGES system)
 
-set(MY_PROJ_LIBS gtest
+set(MY_PROJ_LIBS GTest::GTest
                  dsn.dist.service.replication_lib
                  dsn.dist.service.meta_server_lib
                  dsn.dist.service.common
@@ -37,7 +37,7 @@ set(MY_PROJ_LIBS gtest
                  dsn.dev.utility
 )
 
-set(MY_PROJ_LIB_PATH gtest)
+set(MY_PROJ_LIB_PATH GTest::GTest)
 
 # Extra files that will be installed
 FILE(GLOB CASE_FILES "case-*")

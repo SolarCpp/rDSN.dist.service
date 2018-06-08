@@ -32,7 +32,7 @@ set(MY_PROJ_LIBS dsn.dist.service.meta_server_lib
                  dsn.dist.service.common
                  dsn.dist.service.fd
                  zookeeper
-                 gtest)
+                 GTest::GTest)
 
 set(MY_PROJ_LIB_PATH "")
 
