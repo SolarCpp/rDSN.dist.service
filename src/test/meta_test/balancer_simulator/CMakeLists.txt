@@ -24,7 +24,7 @@ set(MY_PROJ_INC_PATH ../../../meta_server/meta_server_lib ../../../common ${GTES
 
 set(MY_PROJ_LIBS dsn.dist.service.meta_server_lib
                  dsn.dist.service.common
-                 gtest)
+                 GTest::GTest)
 
 set(MY_PROJ_LIB_PATH "")
 
@@ -32,4 +32,4 @@ set(MY_PROJ_LIB_PATH "")
 set(MY_BINPLACES "")
 
 dsn_add_executable()
-add_dependencies(${MY_PROJ_NAME} googletest)
+#add_dependencies(${MY_PROJ_NAME} googletest)

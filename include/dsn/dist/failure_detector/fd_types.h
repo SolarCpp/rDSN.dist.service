@@ -15,7 +15,7 @@
 #include <thrift/protocol/TProtocol.h>
 #include <thrift/transport/TTransport.h>
 
-#include <thrift/cxxfunctional.h>
+//#include <thrift/cxxfunctional.h>
 
 
 namespace dsn { namespace fd {

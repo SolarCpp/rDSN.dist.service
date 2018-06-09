@@ -30,8 +30,8 @@ set(MY_PROJ_LIBS
     dsn.dist.service.fd
     dsn.dist.service.fd.multimaster
     dsn.dist.service.zookeeper_provider
-    zookeeper_mt
-    gtest
+    zookeeper
+    GTest::GTest
     )
 
 set(MY_PROJ_LIB_PATH "")

@@ -22,7 +22,7 @@ set(MY_SRC_SEARCH_MODE "GLOB")
 
 set(MY_PROJ_INC_PATH 
     ../../../meta_server/meta_server_lib 
-    ../../../meta_server/zookeeper 
+    #../../../meta_server/zookeeper 
     ../../../common 
     ${GTEST_INCLUDE_DIR}
     )
@@ -31,8 +31,8 @@ set(MY_PROJ_LIBS dsn.dist.service.meta_server_lib
                  dsn.dist.service.zookeeper_provider
                  dsn.dist.service.common
                  dsn.dist.service.fd
-                 zookeeper_mt
-                 gtest)
+                 zookeeper
+                 GTest::GTest)
 
 set(MY_PROJ_LIB_PATH "")
 
@@ -40,4 +40,4 @@ set(MY_PROJ_LIB_PATH "")
 set(MY_BINPLACES test.sh config-test.ini)
 
 dsn_add_executable()
-add_dependencies(${MY_PROJ_NAME} googletest)
+#add_dependencies(${MY_PROJ_NAME} googletest)

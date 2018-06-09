@@ -15,8 +15,9 @@ if((NOT DEFINED DSN_GIT_SOURCE) OR (DSN_GIT_SOURCE STREQUAL ""))
 endif()
 set(GIT_SOURCE_FILE "ext/gitsource.${DSN_GIT_SOURCE}")
 include(${GIT_SOURCE_FILE})
-add_subdirectory(ext/zookeeper)
-add_subdirectory(ext/rapidjson)
+
+find_package(zookeeper)
+find_package(rapidjson)
 
 # local source 
 include_directories(include)
