@@ -10,11 +10,11 @@ else()
 endif()
 
 # external projects
-if((NOT DEFINED DSN_GIT_SOURCE) OR (DSN_GIT_SOURCE STREQUAL ""))
-    set(DSN_GIT_SOURCE "github")
-endif()
-set(GIT_SOURCE_FILE "ext/gitsource.${DSN_GIT_SOURCE}")
-include(${GIT_SOURCE_FILE})
+#if((NOT DEFINED DSN_GIT_SOURCE) OR (DSN_GIT_SOURCE STREQUAL ""))
+#    set(DSN_GIT_SOURCE "github")
+#endif()
+#set(GIT_SOURCE_FILE "ext/gitsource.${DSN_GIT_SOURCE}")
+#include(${GIT_SOURCE_FILE})
 
 find_package(zookeeper)
 find_package(rapidjson)
